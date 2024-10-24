@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="740dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="40dp"
+            android:background="@drawable/ic_tbllr_cell_shape">
+
+
+            <!-- Details Label TextView -->
+            <TextView
+                android:id="@+id/detailsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/details"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--            app:layout_constraintTop_toBottomOf="@id/lenText" />-->
+
+
+            <!-- Table Layout for Values -->
+            <TableLayout
+                android:id="@+id/detailsTable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:stretchColumns="2"
+                app:layout_constraintLeft_toLeftOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@+id/detailsLabel">
+
+                <!-- Table Row for Temperature -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.12"
+                        android:background="@drawable/ic_tblr_cell_shape"
+                        android:padding="10dp"
+                        android:text="Address"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/Byte0Text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:background="@drawable/ic_tbr_cell_shape"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textSize="18sp" />
+                </TableRow>
+
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.12"
+                        android:background="@drawable/ic_tblr_cell_shape"
+                        android:padding="10dp"
+                        android:text="Device ID"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/Byte1Text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:background="@drawable/ic_tbr_cell_shape"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <!-- Table Row for Humidity -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.12"
+                        android:background="@drawable/ic_tblr_cell_shape"
+                        android:padding="10dp"
+                        android:text="X axis"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/Byte2Text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:background="@drawable/ic_tbr_cell_shape"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.12"
+                        android:background="@drawable/ic_tblr_cell_shape"
+                        android:padding="10dp"
+                        android:text="Y axis"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/Byte3Text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:background="@drawable/ic_tbr_cell_shape"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.12"
+                        android:background="@drawable/ic_tblr_cell_shape"
+                        android:padding="10dp"
+                        android:text="Z axis"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/Byte4Text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:background="@drawable/ic_tbr_cell_shape"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textSize="18sp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.12"
+                        android:background="@drawable/ic_tblr_cell_shape"
+                        android:padding="10dp"
+                        android:text="Frequency"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/Byte5Text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:background="@drawable/ic_tbr_cell_shape"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textSize="18sp" />
+                </TableRow>
+
+
+
+            </TableLayout>
+
+            <!-- OK Button -->
+            <Button
+                android:id="@+id/okButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/ok"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detailsTable"
+                android:background="@drawable/ic_tbr_cell_shape" />
+
+            <Button
+                android:id="@+id/openPlotActivityButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/Plot"
+                app:layout_constraintEnd_toStartOf="@id/okButton"
+                app:layout_constraintTop_toBottomOf="@id/detailsTable"
+                android:background="@drawable/ic_tbrr_cell_shape" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</layout>

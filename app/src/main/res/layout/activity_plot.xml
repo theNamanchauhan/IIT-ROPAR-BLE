@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <!-- Declare your ViewModel here if you have one -->
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.plot.PlotActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:contentDescription="Graphical Representation"
+            android:theme="?attr/actionBarTheme"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/xChart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/toolbar"
+            android:layout_margin="16dp" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/yChart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/xChart"
+            android:layout_margin="16dp" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/zChart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/yChart"
+            android:layout_margin="16dp" />
+
+
+    </RelativeLayout>
+</layout>
